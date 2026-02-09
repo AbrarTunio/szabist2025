@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>JavaScript</h1>
+    <ul>
+      <li>It can be written inline using <code>special</code> attributes</li>
+      <li>It can be written internal using <code>script</code> tag</li>
+      <li>
+        It can be written as external file by only linking html with
+        <code>.js</code> file
+      </li>
+    </ul>
+
+    <h1
+      onclick="
+        this.style.marginLeft = '50px';
+        this.style.color = 'red';
+      "
+    >
+      Exmaple of Inline
+    </h1>
+
+    <h1 id="internal">Example of Internal JS</h1>
+
+    <script>
+      let element = document.getElementById("internal");
+      element.style.color = "blue";
+      element.style.BackgroundColor = "Orange";
+      element.style.marginTop = "50px";
+    </script>
+  </body>
+</html>
